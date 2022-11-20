@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "adminpro3": {
+    "adminapp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/adminpro3",
+            "outputPath": "dist/adminapp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "adminpro3:build:production"
+              "browserTarget": "adminapp:build:production"
             },
             "development": {
-              "browserTarget": "adminpro3:build:development"
+              "browserTarget": "adminapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "adminpro3:build"
+            "browserTarget": "adminapp:build"
           }
         },
         "test": {
